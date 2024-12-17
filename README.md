@@ -1,1 +1,1 @@
-This are just my coding practices collection for javascript
+These are just my coding practice collection for Javascript.
