@@ -1,0 +1,23 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1 {
+  text-align: center;
+}
+.inputContainer {
+  text-align: center;
+}
+p {
+  text-align: center;
+}
+.btn {
+  padding: 10px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.input {
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+}
