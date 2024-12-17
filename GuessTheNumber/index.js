@@ -23,9 +23,11 @@ userSubmit.onclick = function () {
     } else if (randomNum < userGuess) {
       attempts--;
       userDisplay.textContent = `Sorry, too high! You have ${attempts} attempts left.`;
+      userDisplay.classList.add("attempts-red");
     } else if (randomNum > userGuess) {
       attempts--;
       userDisplay.textContent = `Sorry, too low! You have ${attempts} attempts left.`;
+      userDisplay.classList.add("attempts-red");
     }
   } else if (attempts === 0 || userInput != randomNum) {
     userDisplay.textContent = `Game Over! the correct number was ${randomNum}`;

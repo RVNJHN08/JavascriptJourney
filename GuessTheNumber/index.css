@@ -21,3 +21,6 @@ p {
   border-radius: 10px;
   cursor: pointer;
 }
+.attempts-red {
+  color: red;
+}
