@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: transparent;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 2000px;
+  margin: 10px;
+  
+  
+}
+
+.flip-card-inner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 1.3s;
+  transform-style: preserve-3d;
+  
+  
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 23px;
+  background-color: transparent;
+  overflow: hidden;
+}
+
+.flip-card-front {
+  background-color: transparent;
+  color: black;
+  
+}
+.flip-card-front img {
+  border-radius: 23px;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+  height: 220px;
+}
+</style>
+</head>
+<body>
+    <div>
+        <a href="https://example.com" target="_blank">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="https://i.postimg.cc/gkw3V1VH/ABOUT-FIELD-TECH-ASSISTANCE.png" alt="Logo" style="width:300px; height:300px;">
+                  </div>
+                  <div class="flip-card-back">
+                   <h4>Field Tech Assistance Short Description Here</h4>
+                  </div>
+                </div>
+            </div>
+        </a>
+    </div>
+    
+</body>
+</html>
