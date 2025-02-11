@@ -9,6 +9,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  overflow: hidden;
 }
 
 .flip-card {
@@ -54,6 +55,7 @@ body {
 }
 .flip-card-front img {
   border-radius: 23px;
+  border: none;
 }
 
 .flip-card-back {
@@ -62,18 +64,21 @@ body {
   transform: rotateY(180deg);
   height: 220px;
 }
+.flip-card-back h4 {
+ padding: 10px;
+}
 </style>
 </head>
 <body>
     <div>
-        <a href="https://example.com" target="_blank">
+        <a href="https://sites.google.com/view/deped-ftad-valenzuela/contacts?authuser=0" target="_blank">
             <div class="flip-card">
                 <div class="flip-card-inner">
                   <div class="flip-card-front">
-                    <img src="https://i.postimg.cc/gkw3V1VH/ABOUT-FIELD-TECH-ASSISTANCE.png" alt="Logo" style="width:300px; height:300px;">
+                    <img src="https://i.postimg.cc/qvB53jPd/ABOUT-FIELD-TECH-ASSISTANCE-5-2.png" alt="Contacts" style="width:300px; height:300px;">
                   </div>
                   <div class="flip-card-back">
-                   <h4>Field Tech Assistance Short Description Here</h4>
+                   <h4>Contacts Short Description Here</h4>
                   </div>
                 </div>
             </div>
